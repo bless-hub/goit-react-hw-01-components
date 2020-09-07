@@ -1,0 +1,33 @@
+.statistics {
+  width: 270px;
+  margin: 0 auto;
+  box-shadow: 1px 1px 7px #9ec2c9;
+  margin-bottom: 20px;
+}
+.title {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.statList {
+  list-style: none;
+  display: flex;
+  padding-left: 17px;
+  padding-right: 17px;
+  justify-content: space-between;
+}
+.item {
+  display: flex;
+  padding-top: 12px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  height: 70px;
+}
+.label {
+  font-size: 12px;
+}
+
+.percentage {
+  font-size: 18px;
+}

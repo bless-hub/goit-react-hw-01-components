@@ -1,0 +1,35 @@
+.friendlist {
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: 600;
+  width: 400px;
+}
+.item {
+  display: flex;
+  box-shadow: 1px 1px 5px gainsboro;
+  margin-bottom: 10px;
+}
+.avatar {
+  border-radius: 10%;
+}
+.name {
+  padding-left: 20px;
+  padding-top: 5px;
+}
+.status {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 5px;
+  background-color: aqua;
+}
+
+.online {
+  composes: status;
+  background-color: #0f0;
+}
+
+.offline {
+  composes: status;
+  background-color: #f00;
+}
