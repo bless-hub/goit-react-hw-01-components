@@ -12,7 +12,7 @@ import transactions from './TransactionHistory/transactions.json';
 export default function App() {
   return (
     <>
-      <h2>Profile</h2>
+      <h2 className="header">Profile</h2>
       <Profile {...user} />
       <Statistics title="UPLOAD STATS" statistics={stats} />
       <Friendlist friends={list} />

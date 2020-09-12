@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const HistoryItem = ({ type, amount, currency }) => {
   return (
@@ -8,6 +9,12 @@ const HistoryItem = ({ type, amount, currency }) => {
       <td>{currency}</td>
     </tr>
   );
+};
+
+HistoryItem.propTypes = {
+  type: PropTypes.string.isRequired,
+  amount: PropTypes.string.isRequired,
+  currency: PropTypes.string.isRequired,
 };
 
 export default HistoryItem;
