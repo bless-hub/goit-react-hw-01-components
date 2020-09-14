@@ -12,7 +12,7 @@ const FriendList = ({ friends }) => (
 );
 
 FriendList.propTypes = {
-  friend: arrayOf(PropTypes.object),
+  id: PropTypes.number.isRequired,
 };
 
 export default FriendList;
