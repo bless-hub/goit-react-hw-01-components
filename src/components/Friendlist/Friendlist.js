@@ -1,7 +1,7 @@
 import React from 'react';
 import FriendListItem from './FriendListItem';
 import styles from './Friendlist.module.scss';
-import PropTypes, { arrayOf } from 'prop-types';
+import PropTypes from 'prop-types';
 
 const FriendList = ({ friends }) => (
   <ul className={styles.friendlist}>
@@ -12,7 +12,9 @@ const FriendList = ({ friends }) => (
 );
 
 FriendList.propTypes = {
-  id: PropTypes.number.isRequired,
+  friends: PropTypes.arrayOf(
+    PropTypes.shape({ id: PropTypes.number.isRequired }),
+  ),
 };
 
 export default FriendList;

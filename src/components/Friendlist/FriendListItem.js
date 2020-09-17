@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Friendlist.module.scss';
+import PropTypes from 'prop-types';
 
 const FriendListItem = ({ isOnline, avatar, name }) => {
   return (
@@ -13,6 +14,10 @@ const FriendListItem = ({ isOnline, avatar, name }) => {
       <p className={styles.name}>{name}</p>
     </li>
   );
+};
+
+FriendListItem.propTypes = {
+  name: PropTypes.string.isRequired,
 };
 
 export default FriendListItem;
